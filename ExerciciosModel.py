@@ -32,4 +32,8 @@ def E6(sal):
     msg = 'Junto com a reajuste desse ano que foi de: 10.16%\n' + 'Fico um total de: {}'.format(total)
     return msg
     
+def E8(nota1, nota2, nota3):
+    media = (nota1 + nota2 + nota3)/3
+    msg = 'Sua média é de: {}'.format(media)
+    return mesg
     
