@@ -10,6 +10,7 @@ def Menu():
           '\n3. Exercicio 03' +
           '\n4. Exercicio 04' +
           '\n5. Exercicio 05' +
+          '\n6. Exercicio 06' +
           '\n0. Sair' +
           '\nEscolha uma das opções acima')
     this.opcao = int(input())
@@ -37,6 +38,10 @@ def PegaBase():
 def PegaAlura():
     print('Informe a Altura do Retângulo')
     this.altura = float(input())
+    
+def PegaSal():
+    print('Por favor informe seu salario mensal')
+    this.sal = float(input())
 
 def Executar():
     while(this.opcao != 0):
@@ -58,6 +63,9 @@ def Executar():
             PegaM()
             PegaA()
             print(ExerciciosModel.E4(this.dia, this.mes, this.ano))
+       
+        elif this.opcao == 6:
+            print(ExerciciosModel.E6(sal))
 
 
 
