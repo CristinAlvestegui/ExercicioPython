@@ -25,4 +25,11 @@ def E4(dia, mes, ano):
     return msg
 
 def E5():
-    return 'oi'
+    return 'são eleitorwes, pula'
+
+def E6(sal):
+    total = sal((sal * 10,16)/100)
+    msg = 'Junto com a reajuste desse ano que foi de: 10.16%\n' + 'Fico um total de: {}'.format(total)
+    return msg
+    
+    
