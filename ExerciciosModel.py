@@ -28,12 +28,13 @@ def E5():
     return 'são eleitores, pula'
 
 def E6(sal):
-    total = sal((sal * 10,16)/100)
+    total = sal + ((sal * 10,16)/100)
     msg = 'Junto com a reajuste desse ano que foi de: 10.16%\n' + 'Fico um total de: {}'.format(total)
     return msg
 
-def E7():
-    return 'é carro, pula'
+def E7(fabri):
+    total = ((fabri * 45)/100) + ((fabri * 28)/100) + fabri
+    return 'O custo de fábrica do carro é de: {}, mais o 45% de impostos e 28% do distrubuidor fico um total de: {}'.format(fabri, total)
 
 def E8(nota1,nota2,nota3):
     total = nota1 + nota2 + nota3
@@ -53,10 +54,13 @@ def E9(maca):
     
 def E10():
     return 'que preguiçaaaaaaaa'
+
 def E11():
     return 'n fiz.....ainda'
+
 def E12():
     return 'pro, estou com preguiça.....'
+
 def E13(num1):
     if num1 < 10:
         num2 = 0
@@ -69,12 +73,4 @@ def E13(num1):
         return msg
     else:
         return 'Por favor informe um número entre 1 e 10'
-    
-    
-    
-    
-def E8(nota1, nota2, nota3):
-    media = (nota1 + nota2 + nota3)/3
-    msg = 'Sua média é de: {}'.format(media)
-    return mesg
-    
+   
