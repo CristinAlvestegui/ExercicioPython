@@ -43,6 +43,26 @@ def PegaSal():
     print('Por favor informe seu salario mensal')
     this.sal = float(input())
 
+def PegaFabri():
+    print('Informe o custo da Fábrica')
+    this.fabri = float(input())
+    
+def PegaNota1():
+    print('Informe a primeira nota:')
+    this.nota1 = float(input())
+    
+def PegaNota2():
+    print('Informe a segunda nota:')
+    this.nota2 = float(input())
+ 
+def PegaNota3():
+    print('Informe a terceira nota:')
+    this.nota2 = float(input())
+
+def PegaMaca():
+    print('Por favor informe quantas maças você vai comprar:')
+    this.maca = float(input())
+
 def Executar():
     while(this.opcao != 0):
         Menu()
@@ -57,19 +77,29 @@ def Executar():
             PegaBase()
             PegaAlura()
             print(ExerciciosModel.E3(this.base, this.altura))
-
         elif this.opcao == 4:
             PegaD()
             PegaM()
             PegaA()
             print(ExerciciosModel.E4(this.dia, this.mes, this.ano))
-       
         elif this.opcao == 6:
             print(ExerciciosModel.E6(sal))
-
-
-
-
-
-
-
+        elif this.opcao == 7:
+            PegaFabri()
+            print(ExercicioModel.E7(this.fabri))
+        elif this.opcao == 8:
+            PegaNota1()
+            PegaNota2()
+            PegaNota3()
+            print(ExercicioModel.E8(this.nota1, this.nota2, this.nota3))
+        elif this.opcao == 9:
+            PegaMaca()
+            print(ExercicioModel.E9(this.maca))
+        elif this.opcao == 10:
+            print('')
+        elif this.opcao == 11:
+            print('')
+        elif this.opcao == 12:
+            print('')
+        elif this.opcao == 13:
+            print('')
