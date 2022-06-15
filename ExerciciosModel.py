@@ -73,4 +73,8 @@ def E13(num1):
     
     
     
+def E8(nota1, nota2, nota3):
+    media = (nota1 + nota2 + nota3)/3
+    msg = 'Sua média é de: {}'.format(media)
+    return mesg
     
