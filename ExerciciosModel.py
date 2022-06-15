@@ -50,14 +50,22 @@ def E9(maca):
         total = int(maca * 1,30)
         msg = 'Obrigada pela compra!!\n\n' + 'Você comprou: {}maças, com um valor total de {}R$, cada uma\n'.format(maca, total)
         return msg
+    
 def E10():
     return 'que preguiçaaaaaaaa'
+def E11():
+    return 'n fiz.....ainda'
+def E12():
+    return 'pro, estou com preguiça.....'
 def E13(num1):
     if num1 < 10:
         num2 = 0
-        multi = num1 * num2
-        for num2 in range(10):
-            msg = '{} X {} = {}'.format(num1, num2, multi)
+        for num2 in range(11):
+            if num2 == 11:
+                break
+            else:
+                multi = num1 * num2
+                msg = '{} X {} = {}'.format(num1, num2, multi)
         return msg
     else:
         return 'Por favor informe um número entre 1 e 10'
