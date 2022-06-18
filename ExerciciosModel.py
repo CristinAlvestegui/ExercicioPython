@@ -24,8 +24,9 @@ def E4(dia, mes, ano):
     msg = 'Sua idade expressa em dias é: {}'.format(idade)
     return msg
 
-def E5():
-    return 'são eleitores, pula'
+def E5(elei, votoV, votoB, votoN):
+    totalV = votoV + votoB + votoN  
+    return '{}, {}, {}'.format(votoV/totalV, votoB/totalV, votoN/totalV)
 
 def E6(sal):
     total = sal + ((sal * 10,16)/100)
@@ -49,14 +50,21 @@ def E9(maca):
         return msg
     else:
         total = int(maca * 1,30)
-        msg = 'Obrigada pela compra!!\n\n' + 'Você comprou: {}maças, com um valor total de {}R$, cada uma\n'.format(maca, total)
+        msg = 'Obrigada pela compra!!\n\n\n' + 'Você comprou: {}maças, com um valor total de {}R$, cada uma\n'.format(maca, total)
         return msg
     
 def E10():
     return 'que preguiçaaaaaaaa'
 
-def E11():
-    return 'n fiz.....ainda'
+def E11(sal, venda):
+    if venda > 1500:
+        total = venda((venda*5)/100) + sal
+        msg = 'Seu salário é: {}, As vendas foram: {}, Dando um totla de: {}'.format(sal, venda, total)
+        return msg
+    else:
+        total = venda((venda*3)/100) + sal
+        msg = '\n\nSeu salário é: {}, As vendas foram: {}, Dando um totla de: {}'.format(sal, venda, total)
+        return 'n fiz.....ainda' + msg
 
 def E12():
     return 'pro, estou com preguiça.....'
@@ -73,4 +81,4 @@ def E13(num1):
         return msg
     else:
         return 'Por favor informe um número entre 1 e 10'
-   
+
