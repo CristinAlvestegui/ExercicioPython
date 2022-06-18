@@ -25,8 +25,11 @@ def E4(dia, mes, ano):
     return msg
 
 def E5(elei, votoV, votoB, votoN):
-    totalV = votoV + votoB + votoN  
-    return '{}, {}, {}'.format(votoV/totalV, votoB/totalV, votoN/totalV)
+    totalV = votoV + votoB + votoN 
+    porVal = votoV/totalV
+    porBran = votoB/totalV
+    porNulo = votoN/totalV
+    return 'O número de eleitores é de: {}, A % de votos validos é de: {}, A % de votos em Branco é de: {}, A % de votos em Nulo é de: {}'.format(elei, porVal, porBran, porNulo)
 
 def E6(sal):
     total = sal + ((sal * 10,16)/100)
