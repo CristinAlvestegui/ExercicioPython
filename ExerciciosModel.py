@@ -55,8 +55,9 @@ def E9(maca):
         total = int(maca * 1,30)
         msg = 'Obrigada pela compra!!\n\n\n' + 'Você comprou: {}maças, com um valor total de {}R$, cada uma\n'.format(maca, total)
         return msg
-    
-def E10():
+  
+def E10(num1):
+    num1 = new valores[10]
     return 'que preguiçaaaaaaaa'
 
 def E11(sal, venda):
