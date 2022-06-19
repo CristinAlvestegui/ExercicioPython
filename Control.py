@@ -16,7 +16,7 @@ def Menu():
     this.opcao = int(input())
 
 def Pega1():
-    print('Informe o primeiro número')
+    print('Informe o um número')
     this.num1 = input()
 
 def PegaD():
@@ -30,7 +30,7 @@ def PegaM():
 def PegaA():
     print('Informe sua idade em anos: ')
     this.ano = int(input())
-
+    
 def PegaBase():
     print('Informe a Base do Retângulo')
     this.base = float(input())
@@ -76,46 +76,66 @@ def PegaVoto():
     this.votoN = float(input())
     print('Informe o número de votos em branco')
     this.votoB = float(input())
-
+    
+def PegaTudo():
+    if this.opcao == 2:
+        Pega1() 
+    elif this.opcao == 3:
+        PegaBase()
+        PegaAlura()
+    elif this.opcao == 4:
+        PegaD()
+        PegaM()
+        PegaA()
+    elif this.opcao == 5:
+        PegaVoto()
+    elif this.opcao == 6:
+        PegaSal()
+    elif this.opcao == 7:
+        PegaFabri()
+    elif this.opcao == 8:
+        PegaNotas()
+    elif this.opcao == 9:
+        PegaMaca()
+    elif this.opcao == 10:
+        print'Não temos lista ainda'
+    elif this.opcap == 11:
+        PegaVenda()
+    elif this.opca0 == 12:
+        print ('N temos ainda')
+    elif this.opcao == 13:
+        Pega1()
+       
+        
 def Executar():
     while(this.opcao != 0):
         Menu()
+        PegaTudo()
         if this.opcao == 0:
             print('Obrigado')
         elif this.opcao == 1:
             print(ExerciciosModel.Exercicio01())
         elif this.opcao == 2:
-            Pega1()
             print('O antecessor do número: {} é: {}'.format(this.num1, ExerciciosModel.Exercicio02(this.num1)))
         elif this.opcao == 3:
-            PegaBase()
-            PegaAlura()
             print(ExerciciosModel.E3(this.base, this.altura))
         elif this.opcao == 4:
-            PegaD()
-            PegaM()
-            PegaA()
             print(ExerciciosModel.E4(this.dia, this.mes, this.ano))
         elif this.opcao == 5:
-            PegaVoto()
             print(ExerciciosModel.E5(this.elei, this.votoV, this.votoN, this.votoB))
         elif this.opcao == 6:
             print(ExerciciosModel.E6(sal))
         elif this.opcao == 7:
-            PegaFabri()
             print(ExercicioModel.E7(this.fabri))
-        elif this.opcao == 8:
-            PegaNotas()            
+        elif this.opcao == 8:     
             print(ExercicioModel.E8(this.nota1, this.nota2, this.nota3))
         elif this.opcao == 9:
-            PegaMaca()
             print(ExercicioModel.E9(this.maca))
         elif this.opcao == 10:
-            print('')
-        elif this.opcao == 11:
-            PegaVenda()   
+            print('Temos que usar Lista')
+        elif this.opcao == 11:  
             print(ExercicioModel.E11(thi.sal, this.venda))
         elif this.opcao == 12:
             print('')
         elif this.opcao == 13:
-            print('')
+            print(ExercicioModel.E13(this.num1))
